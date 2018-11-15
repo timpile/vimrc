@@ -1,5 +1,20 @@
 # Vim Cheatsheet
 
+## Basic Commands
+`c` change
+`d` delete
+`y` yank (copy)
+`yy` yank line
+`dd` delete line
+
+`i` inside
+`a` inside including spaces
+`t` from cursor til ...
+
+`w` word
+`p` paragraph
+`t` tag
+
 ## Inside bookends
 `%` finds a matching ),], or }
 
