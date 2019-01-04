@@ -21,8 +21,16 @@ highlight LineNr ctermfg=grey
 set autoread                    "Reload files changed outside vim
 set hidden
 
-"turn on syntax highlighting
+" Enables copy/paste for visual selection outside of vim
+map <C-c> y:e ~/tmpclipboard<CR>P:w !pbcopy<CR><CR>:bdelete!<CR>
+
+" turn on syntax highlighting
 syntax on
+
+" Syntax for multiple languages supported via vim-polyglot
+" To install run:
+" cd ~/.vim/bundle && \
+" git clone https://github.com/sheerun/vim-polyglot.git
 
 " Change leader to a comma because the backslash is too far away
 " That means all \x commands turn into ,x
@@ -40,6 +48,10 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 set expandtab
+
+" How to install pathogen plugins
+" cd ~/.vim/bundle && \
+" git clone ...
 
 execute pathogen#infect()
 filetype plugin indent on

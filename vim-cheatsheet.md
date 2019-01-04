@@ -20,7 +20,7 @@
 
 ## Text Object Modifiers
 `i` ( i )nner
-`a` ( i )nner including spaces
+`a` ( a )ll * like inner but includes spaces
 `t` from cursor un( t )il specified location
 
 ## Navigation
@@ -41,6 +41,9 @@
 `r` ( r )eplaces a single character under cursor
 `R` ( R )eplaces more than one character
 `J` ( J )oin current and next line
+
+`u` ( u )ndo
+`ctrl r` ( r )edo
 
 ## Combinations
 
