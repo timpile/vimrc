@@ -20,6 +20,9 @@ set backspace=indent,eol,start 	"Allow backspace in insert mode
 highlight LineNr ctermfg=grey
 set autoread                    "Reload files changed outside vim
 set hidden
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+
 
 " Enables copy/paste for visual selection outside of vim
 map <C-c> y:e ~/tmpclipboard<CR>P:w !pbcopy<CR><CR>:bdelete!<CR>
