@@ -72,3 +72,15 @@
 `visU` ( v )isually select ( i )nner ( s )entence, make ( U )pper case
 
 `visu` ( v )isually select ( i )nner ( s )entence, make lower case
+
+## Explorer
+
+`Ex`
+`d` new directory
+`%` new file
+`I` toggle top info
+`i` cycle through directory layouts
+
+## Navigation
+`shft+[`
+`shft+]`

@@ -23,6 +23,26 @@ set hidden
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
+" File Explorer settings
+" let g:netrw_banner = 0
+" let g:netrw_liststyle = 3
+" let g:netrw_browse_split = 4
+" let g:netrw_altv = 1
+" let g:netrw_winsize = 25
+" augroup ProjectDrawer
+"   autocmd!
+"   autocmd VimEnter * :Vexplore
+" augroup END
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+let NERDTreeQuitOnOpen = 1
+let NERDTreeAutoDeleteBuffer = 1
+
+" let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
 
 " Enables copy/paste for visual selection outside of vim
 map <C-c> y:e ~/tmpclipboard<CR>P:w !pbcopy<CR><CR>:bdelete!<CR>
