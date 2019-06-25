@@ -29,12 +29,3 @@ cd ~/.vim/pack/tpope/start
 git clone https://tpope.io/vim/surround.git
 vim -u NONE -c "helptags surround/doc" -c q
 ```
-
-## Portability
-Symlink `~/.vimrc` to `~/Dropbox/vimrc/.vimrc`
-Symlink `~/.vim` to `~/Dropbox/vimrc/.vim`
-
-```
-ln -s ~/Dropbox/vimrc/.vimrc ~/.vimrc
-ln -s ~/Dropbox/vimrc/.vim/ ~/.vim
-```
